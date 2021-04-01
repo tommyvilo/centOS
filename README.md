@@ -4,10 +4,10 @@ Guida rapida all'installazione dei principali servizi per la messa in opera di u
 - MariaDB (+ phpMyAdmin)
 - ftp
 
-![alt text](img/okBRO.png)
+![alt text]()
 
 ## Sistema
-CentOS 7 su macchina virtuale Oracle VirtualBox 6.1
+CentOS 8 su macchina virtuale Oracle VirtualBox 6.1
 
 ## Note iniziali
 I servizi installati sono proposti nell'ordine di installazione effettuato (ciò non costituisce un vincolo, tranne in alcuni casi, ovviamente).
