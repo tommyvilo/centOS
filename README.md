@@ -239,7 +239,7 @@ Creazione file PAM `/etc/pam.d/vsftpd-virtual` (il nome pu&oacute; essere quello
   account required pam_userdb.so db=/etc/vsftpd/virtual-users
 ```
 Per ogni utente virtuale si crea una dir nella `DocumentRoot` di Apache, si assegna la ownership a ftp, si informa SELinux di consentire accesso in letura/scrittura al di fuori della home dir tipica (`/home`).<br/>
-L'esempio che segue &eacute; per l'utente `sito01` (replicare le parti necessarie per l'utente sito02)
+L'esempio che segue &eacute; per l'utente `utente1` (replicare le parti necessarie per l'utente utente2)
 ```
   mkdir -p /var/www/html/sito01
   chown ftp: /var/www/html/sito01
