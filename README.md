@@ -4,7 +4,6 @@ Guida rapida all'installazione dei principali servizi per la messa in opera di u
 - MariaDB (+ phpMyAdmin)
 - ftp
 
-![alt text]()
 
 ## Sistema
 CentOS 8 su macchina virtuale Oracle VirtualBox 6.1
@@ -30,6 +29,10 @@ Installazione e avvio del servizio. L'ultimo comando fa sì che il servizio sia 
   systemctl start sshd
   systemctl enable sshd
 ```
+
+![LOGIN SSH - TERMIUS](img/termius.png)
+![MAIN PAGE APACHE](img/apache.png)
+
 ##### Configurazione di ssh con impostazioni di sicurezza
 Le *buone pratiche* indicano di modificare i comportamenti di default, quando possibile. In questo caso si impedir&aacute; l'accesso da remoto all'utente root e, inoltre, si indicheranno gli utenti abilitati all'accesso da remoto.<br/>Dopo aver fatto una copia del file di configurazione si proceder&aacute; a impostare i seguenti comandi
 ```
