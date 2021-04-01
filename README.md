@@ -273,10 +273,5 @@ Proteggere il file db `/etc/vsftpd/virtual-users.db`
   chmod 600 /etc/vsftpd/virtual-users.db
 ```
 Testing del servizio con FileZilla e gli utenti virtuali...<br/>
-**File di configurazione per le impostazioni correnti** `vsftpd.conf.03`
 
-## Comandi accessori
-- **ip a** - restituisce le informazioni relative alla connessione di rete, compreso l'ind. IP del server che servirà per la configurazione dei servizi e per il testing degli stessi
-- **yum update** - aggiorna i repository del sistema
-- **yum clean all** - cancella la cache utilizzata dal package manager yum
-- **yum makecache** - ricrea la cache
+![FTP CLIENT - FILEZILLA](img/ftp.png)
