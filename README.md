@@ -1,7 +1,7 @@
 # CentOS - LAMPP
 Guida rapida all'installazione dei principali servizi per la messa in opera di un sistema di hosting di base
 - http (+ php)
-- MariaDB (+ phpMyAdmin)
+- MySql (+ phpMyAdmin)
 - ftp
 
 
@@ -23,7 +23,7 @@ CentOS deve essere stato installato e configurato per:
 ### *ssh*
 ##### File di configurazione
 `/etc/ssh/sshd_config`<br/><br/>
-Installazione e avvio del servizio. L'ultimo comando fa sì che il servizio sia attivo ad ogni riavvio del sistema. <br/>Il servizio se non diversamente configurato consente l'accesso da remoto a tutti gli utenti del sistema che possono fare login.<br/>Il testing può essere fatto con un client testuale ssh, anche dal server stesso, oppure utilizzando puTTY
+Installazione e avvio del servizio. L'ultimo comando fa sì che il servizio sia attivo ad ogni riavvio del sistema. <br/>Il servizio se non diversamente configurato consente l'accesso da remoto a tutti gli utenti del sistema che possono fare login.<br/>Il testing può essere fatto con un client testuale ssh, anche dal server stesso, oppure utilizzando Termius
 ```
   yum install sshd
   systemctl start sshd
@@ -57,12 +57,12 @@ Configurare il firewall per permettere l'accesso alla porta di default del servi
 ```
 Testing del servizio via web browser da host remoto `http://<ip_server>`
 
-### *DBMS MariaDB*
-Installazione del servizio (`mariadb-server`) e del client CLI (`mariadb`)
+### *DBMS MySql*
+Installazione del servizio (`Mysql-server`) e del client CLI (`mysql`)
 ```
-  yum install mariadb-server mariadb
-  systemctl start mariadb
-  systemctl enable mariadb
+  yum install mysql-server
+  systemctl start mysqld
+  systemctl enable mysqld
 ```
 Esecuzione script per rimuovere alcune impostazioni di default pericolose:
 - password dell'utente root del DBMS --> da impostare per proteggere l'accesso
@@ -99,7 +99,7 @@ Testing via browser da host remoto `http://<ip_server>/info.php`
 ### *phpMyAdmin*
 ##### File di configurazione
 `/etc/httpd/conf.d/phpMyAdmin.conf`<br/><br/>
-Il package non è presente nei repository di default di CentOS 7, quindi è necessario installare il repo aggiuntivo `EPEL repo` (Extra Packages for Enterprise Linux)
+Il package non è presente nei repository di default di CentOS 8, quindi è necessario installare il repo aggiuntivo `EPEL repo` (Extra Packages for Enterprise Linux)
 ```
   yum install epel-release
 ```
