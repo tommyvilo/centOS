@@ -222,10 +222,10 @@ Installazione package `policycoreutils-python`
 Creare un file `/tmp/virtual-users.txt` contenente elenco utenti virtuali e relative password (il file pu&oacute; avere qualsiasi nome). Ogni utente occupa due righe: la prima per username e la seconda per la password.<br/>
 File di esempio `/tmp/virtual-users.txt`:
 ```
-  sito01
-  ftpuser01
-  sito02
-  ftpuser02
+  utente1
+  centos1
+  utente2
+  centos2
 ```
 Creazione del DB a partire dal file appena creato
 ```
